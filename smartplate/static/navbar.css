@@ -1,0 +1,125 @@
+.body {
+  background-color: #f3efe4;
+}
+.header {
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.navbar {
+  background-color: #f3efe4;
+}
+
+.navbar-brand {
+  color: black;
+  margin: 20px;
+  margin-left: 50px;
+  font-family: "Anton", sans-serif;
+  font-size: 24px;
+}
+.navbar-toggler-icon {
+  color: black;
+  text-decoration: solid;
+  margin-right: 10px;
+}
+.nav-link {
+  color: black;
+  padding-right: 10px;
+  margin-right: 50px;
+}
+.main {
+  margin: 20px;
+}
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #8fbe88;
+  color: white;
+  text-align: center;
+  padding-bottom: 0px;
+}
+.contain {
+  background-color: #f3efe4;
+  height: 200px;
+}
+.footerdiv1 {
+  display: flex;
+  width: 100%;
+  background-color: #8fbe88;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerimg {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+  color: black;
+}
+.pFollow {
+  padding-top: 8px;
+}
+.icon {
+  margin: 10px;
+}
+.footer-logo {
+  text-decoration: solid;
+}
+.Pcopyright {
+  color: black;
+}
+.waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+.div {
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+.f {
+  position: fixed;
+}
+
+.card {
+  border-radius: 6px;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.list-group {
+  width: 60% !important;
+  padding: 20px;
+  background-color: #77002e;
+}
+.action {
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 8%;
+}
+.action button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background-color: #8fbe88;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  /* font-weight: bold; */
+}
+.action button a {
+  text-decoration: none;
+  color: black;
+}
+
+.action button:hover,
+.action button:active {
+  background-color: white;
+}
+.allbut:hover {
+  background-color: #3a832f;
+}

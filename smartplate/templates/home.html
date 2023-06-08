@@ -1,0 +1,117 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container-flut" style="background-color: #f3efe4; height: 100%">
+  <div
+    class="container"
+    style="
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    "
+  >
+    <div style="height: 50%; margin-left: 20px; margin-bottom: 50px">
+      <h2>Eat smarter, live healthier <br />with SmartPlate</h2>
+      <br />
+      <p>
+        Our platform connects you with the foods that fuel<br />
+        your body and help you reach your health goals.
+      </p>
+      <br />
+      <p>
+        To get your personalized diet, click the button to calculate your daily
+        calorie needs.
+      </p>
+      <div class="action">
+        <button class="btn">
+          <a href="predict">Get Started</a>
+        </button>
+      </div>
+    </div>
+
+    <div style="height: 50%; margin: 10px">
+      <img
+        src="../static/homepic.png"
+        alt="homepage image"
+        style="height: auto; width: 100%"
+      />
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center; margin: 20px">
+    <h4>Why to choose us</h4>
+  </div>
+
+  <div
+    class="container"
+    style="
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    "
+  >
+    <div class="row">
+      <div
+        class="col"
+        style="
+          height: auto;
+          width: auto;
+          margin: 20px;
+          background-color: #8fbe88;
+          border-radius: 0 20% 5% 5%;
+          box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+        "
+      >
+        <h5 style="text-align: center; margin: 20px">Meal Planning</h5>
+
+        <p style="text-align: center; margin: 10px">
+          Our meals are thoughtfully crafted with a focus on providing balanced
+          nutrition and a variety of flavors. We offer a selection of
+          generalized meals that cater to different user preferences.
+        </p>
+      </div>
+      <div
+        class="col"
+        style="
+          height: auto;
+          width: auto;
+          margin: 20px;
+          background-color: #8fbe88;
+          border-radius: 0 20% 5% 5%;
+          box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+        "
+      >
+        <h5 style="text-align: center; margin: 20px">Convenience</h5>
+
+        <p style="text-align: center; margin: 10px">
+          SmartPlate takes the guesswork out of healthy eating by providing
+          diets fit your lifestyle.
+        </p>
+      </div>
+      <div
+        class="col"
+        style="
+          height: auto;
+          width: auto;
+          margin: 20px;
+          background-color: #8fbe88;
+          border-radius: 0% 20% 5% 5%;
+          box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+        "
+      >
+        <h5 style="text-align: center; margin: 20px">
+          Instant BMI & Calorie Assessment"
+        </h5>
+
+        <p style="text-align: center; margin: 10px">
+          Say goodbye to complex calculations and uncertainties – let us handle
+          the calculations while you focus on achieving your health and wellness
+          goals.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

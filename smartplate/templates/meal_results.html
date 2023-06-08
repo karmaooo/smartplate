@@ -1,0 +1,108 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+  <h3 style="text-align: center; color: #8fbe88">Your Meal Plan is Ready!</h3>
+  <div class="row">
+    <h6 style="text-align: center; font-weight: 400;">
+      Daily Calorie Needs: {{calorie_needs}} kcal
+    </h6>
+    <br />
+    <br />
+    <div class="col-md-4">
+      <h6 style="text-align: center"><b>Breakfast</b></h6>
+      <div
+        style="
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+          padding: auto;
+          border-radius: 4px;
+        "
+      >
+        <br />
+        <p style="text-align: center">{{ breakfast_data.food.label }}</p>
+        <p style="font-weight: 300">
+          Calories: {{ breakfast_data.food.nutrients.ENERC_KCAL|floatformat:1 }}
+          kcal
+        </p>
+        <p style="font-weight: 300">
+          Protein: {{ breakfast_data.food.nutrients.PROCNT|floatformat:1 }} g
+        </p>
+        <p style="font-weight: 300">
+          Fat: {{ breakfast_data.food.nutrients.FAT|floatformat:1 }} g
+        </p>
+        <p style="font-weight: 300">
+          {{ breakfast_data.food.nutrients.CHOCDF|floatformat:1 }} g
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h6 style="text-align: center"><b>Lunch</b></h6>
+      <div
+        style="
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+          padding: auto;
+          border-radius: 4px;
+        "
+      >
+        <br />
+        <p style="text-align: center">{{ lunch_data.food.label }}</p>
+        <p style="font-weight: 300">
+          Calories: {{ lunch_data.food.nutrients.ENERC_KCAL|floatformat:1 }}
+          kcal
+        </p>
+        <p style="font-weight: 300">
+          Protein: {{ lunch_data.food.nutrients.PROCNT|floatformat:1 }} g
+        </p>
+        <p style="font-weight: 300">
+          Fat: {{ lunch_data.food.nutrients.FAT|floatformat:1 }} g
+        </p>
+        <p style="font-weight: 300">
+          Carbs: {{ lunch_data.food.nutrients.CHOCDF|floatformat:1 }} g
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h6 style="text-align: center"><b>Dinner</b></h6>
+
+      <div
+        style="
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+          padding: auto;
+          border-radius: 4px;
+        "
+      >
+        <br />
+        <p style="text-align: center">{{ dinner_data.food.label }}</p>
+        <p style="font-weight: 300">
+          Calories: {{ dinner_data.food.nutrients.ENERC_KCAL|floatformat:1 }}
+          kcal
+        </p>
+        <p style="font-weight: 300">
+          Protein: {{ dinner_data.food.nutrients.PROCNT|floatformat:1 }} g
+        </p>
+        <p style="font-weight: 300">
+          Fat: {{ dinner_data.food.nutrients.FAT|floatformat:1 }} g
+        </p>
+        <p style="font-weight: 300">
+          Carbs: {{ dinner_data.food.nutrients.CHOCDF|floatformat:1 }} g
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
