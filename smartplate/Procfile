@@ -1,1 +1,1 @@
-web: gunicorn smartplate.mainapp.wsgi:application
+web: gunicorn mainapp.wsgi --log-file -
